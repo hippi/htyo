@@ -1,12 +1,16 @@
+# encoding: utf-8
+
 class SivuController < ApplicationController
   def etusivu
-    @topic = "Jepulis"
+    @title = "Etusivu"
   end
 
   def yritys
+    @title = "Tietoja yrityksestämme"
   end
 
   def yhteystiedot
+    @title = "Yhteystiedot"
   end
 
   def loput

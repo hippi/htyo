@@ -1,13 +1,9 @@
 Harkkatyo::Application.routes.draw do
-  get "sivu/etusivu"
-
-  get "sivu/yritys"
-
-  get "sivu/yhteystiedot"
-
   root :to => "sivu#etusivu"
 
-  match "mita.html" => "sivu#yritys"
+  match "yritys" => "sivu#yritys"
+
+  match "yhteystiedot" => "sivu#yhteystiedot"
 
   match ":slug" => "sivu#loput"
 
