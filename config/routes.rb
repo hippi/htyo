@@ -1,4 +1,16 @@
 Harkkatyo::Application.routes.draw do
+  get "sivu/etusivu"
+
+  get "sivu/yritys"
+
+  get "sivu/yhteystiedot"
+
+  root :to => "sivu#etusivu"
+
+  match "mita.html" => "sivu#yritys"
+
+  match ":slug" => "sivu#loput"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
