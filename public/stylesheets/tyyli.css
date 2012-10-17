@@ -95,3 +95,15 @@
     float:left;
     padding: 10px;
 }
+
+th, td {
+    border: 1px;
+    border-style: solid;
+    border-color: #fff;
+    background: #aaa;
+    padding: 5px 20px;
+}
+
+td {
+    background: #ddd;
+}

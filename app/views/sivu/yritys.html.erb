@@ -16,7 +16,7 @@ Ideointisession jälkeen keksimme kokeilla, josko joku suostuisi maksamaan,
 että tekisimme harkkatyön hänen puolestaan. Ja löytyihän jokunen onneton,
 joka halusi välttää harkkatyön tekemisen, mutta opintosuoritusmerkintä
 kiinnosti silti. Tähän mennessä jokainen
-asiakkaamme on jäänyt kiinni ja erotettu koulustaan. Ehkä sinä
+asiakkaamme on jäänyt kiinni ja erotettu koulusta. Ehkä sinä
 olet onnekkaampi!</p>
 
 <p>
@@ -47,10 +47,11 @@ $(function() {
             [2011, 1000]
            ];
 
-  $.plot($("#placeholder"), [ {data: liikevaihdot, bars: 
+  var plot = $.plot($("#placeholder"), [ {data: liikevaihdot, bars: 
                                 { show:true
                                 },
-                                label: "Liikevaihto, euroa"
+                                label: "Liikevaihto, euroa",
+                                color: "#bb2"
                               }]);
 
 });
