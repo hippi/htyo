@@ -1,2 +1,57 @@
-<h1>Sivu#yritys</h1>
-<p>Find me in app/views/sivu/yritys.html.erb</p>
+<h2><%= @title %></h2>
+
+<p>Idean firmallemme saimme eräänä deadlinea edeltävä yönä
+laajan ohjelmoinnin harkkatyötä koodaillessa. Kofeiinin ja satunnaisten
+muiden päihteiden yliannostuksien feikkaamissa euforioissa päätimme,
+että tästä eteenpäin teemme elantomme vastaavia hommia puuhaillen.
+</p>
+
+<p>
+<img src="http://www.cs.tut.fi/~lasip/tut_logo_70x70.gif" alt="TTY:n logo" id="tut"/>
+
+Idea lähti liikkeelle <%= link_to "Tampereen Teknillisessä Yliopistossa", "http://www.tut.fi/"%>.
+Muutaman harkkatyön jälkeen heräsimme karuun todellisuuten huomattuamme,
+ettei kukaan maksa pelkistä harkkatöiden tekemisistä. Ei edes assarit!
+Ideointisession jälkeen keksimme kokeilla, josko joku suostuisi maksamaan,
+että tekisimme harkkatyön hänen puolestaan. Ja löytyihän jokunen onneton,
+joka halusi välttää harkkatyön tekemisen, mutta opintosuoritusmerkintä
+kiinnosti silti. Tähän mennessä jokainen
+asiakkaamme on jäänyt kiinni ja erotettu koulustaan. Ehkä sinä
+olet onnekkaampi!</p>
+
+<p>
+Rahaa tarvitsemme silti elämiseen, joten liikevaihtoa olemme paisuttaneet
+pulloja keräämällä. Tämä onkin muodostunut suureksi osaksi taloudellista
+strategiaamme. Saatat jopa törmätä toimitusjohtajaamme ympäri Hervantaa
+kaivelemassa roskiksia tölkkien toivossa.
+</p>
+
+<p>
+Taloudellinen menestyksemme ei ole ollut aivan sillä tasolla, mitä olemme
+piripäissämme visioineet. Edellisten tilivuosien liikevaihdot selviää tästä:
+</p>
+
+<div id="placeholder"></div>
+<script type="text/javascript">
+$(function() {
+  var liikevaihdot = [[2001, 4000],
+            [2002, 1000],
+            [2003, 300],
+            [2004, 6000],
+            [2005, 1337],
+            [2006, 14000],
+            [2007, 7000],
+            [2008, 4000],
+            [2009, 3000],
+            [2010, 9000],
+            [2011, 1000]
+           ];
+
+  $.plot($("#placeholder"), [ {data: liikevaihdot, bars: 
+                                { show:true
+                                },
+                                label: "Liikevaihto, euroa"
+                              }]);
+
+});
+</script>

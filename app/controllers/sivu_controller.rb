@@ -15,7 +15,8 @@ class SivuController < ApplicationController
 
   def loput
     @slug = params[:slug]
-    render 'yritys'
+    @title = "Ei löytyny."
+    render 'ei'
   end
 
 end

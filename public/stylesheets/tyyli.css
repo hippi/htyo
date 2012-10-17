@@ -59,14 +59,14 @@
     margin: 0 0 0 0;
     padding: 30px 0px;
     display: inline;
-//    background: #606;
+
 }
 
 #content h2 {
     margin: 0;
 }
 
-#aside {
+#huomautukset {
     float: right;
     width: 40%;
     padding: 20px 0px;
@@ -76,13 +76,22 @@
     height: 100%;
 }
 
-#aside h3 { margin: 0; }
+#huomautukset h3 { margin: 0; }
 
-#footer
-{
+#footer {
     clear: left;
     background: #ccc;
     text-align: right;
     padding: 20px;
     height: 1%;
+}
+
+#placeholder {
+    width: 600px;
+    height: 300px;
+}
+
+#tut {
+    float:left;
+    padding: 10px;
 }
